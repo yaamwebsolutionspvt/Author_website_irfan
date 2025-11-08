@@ -23,6 +23,13 @@ export const SiteDataProvider = ({ children }) => {
     tagline: 'Irfan Mohi-ud-din — Young Kashmiri Author, Imam, Khateeb, Teacher & Motivational Speaker.',
     websiteHeading: 'Words that awaken hearts and guide the soul.',
     shortBio: 'Irfan Mohi-ud-din is a Kashmiri author, imam, khateeb, and teacher from Nully Poshwari, Shopian (born 1999). He completed his Maulvi Fazil in 2018 and earned his Post Graduation in Islamic Studies in 2020. Presently, he is working as a Bahaadati Ustaad (senior teacher), while continuing his literary and religious mission. His first book, Lafzon Ke Aansoo (2025), reflects his heartfelt emotions and spiritual journey. His upcoming works include Safar-e-Dil (An Eternal Story), Ek Kadmon Ka Safar, and Dilon Ki Sada — each capturing the essence of love, faith, and human struggle.',
+    socialMedia: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      instagram: 'https://instagram.com',
+      linkedin: 'https://linkedin.com',
+      youtube: 'https://youtube.com',
+    },
     fullBio: `Irfan Mohi-ud-din is a Kashmiri writer, imam, khateeb, teacher, and motivational speaker from Nully Poshwari, Shopian.
 
 Born in 1999, he developed an early love for words, faith, and reflection — transforming his emotions and life experiences into writing that touches the soul.

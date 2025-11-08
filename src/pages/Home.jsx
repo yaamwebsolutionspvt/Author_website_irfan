@@ -89,7 +89,7 @@ const Home = () => {
 
       {/* Call to Action Section */}
       <Section
-        className="bg-gray-900 text-white"
+        className="bg-gray-500 text-white"
         containerClass="container mx-auto px-4 py-20"
       >
         <motion.div
