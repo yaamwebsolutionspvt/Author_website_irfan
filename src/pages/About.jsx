@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import SEO from '../seo/SEO';
 import SchemaAuthor from '../seo/SchemaAuthor';
 import { useSiteData } from '../context/SiteDataContext';
+import PressArticles from '../components/PressArticles';
+import Section from '../components/Section';
 
 const About = () => {
   const { bio } = useSiteData();
@@ -85,6 +87,15 @@ const About = () => {
           </div>
         </div>
       </section>
+       {/* Press & Media Coverage Section */}
+       <Section
+        id="press"
+        title="Press & Media Coverage"
+        subtitle="Featured articles and news coverage"
+        className="bg-white"
+      >
+        <PressArticles />
+      </Section>
 
       {/* Key Information Cards */}
       <section className="bg-gray-50 py-16 md:py-20">

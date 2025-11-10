@@ -1,19 +1,21 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import SEO from '../seo/SEO';
-import SchemaAuthor from '../seo/SchemaAuthor';
-import { useSiteData } from '../context/SiteDataContext';
-import Hero from '../components/Hero';
-import Section from '../components/Section';
-import BookCard from '../components/BookCard';
-import UpcomingBookCard from '../components/UpcomingBookCard';
-import { getUpcomingBooks } from '../data/books';
+import React from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import SEO from "../seo/SEO";
+import SchemaAuthor from "../seo/SchemaAuthor";
+import { useSiteData } from "../context/SiteDataContext";
+import Hero from "../components/Hero";
+import Section from "../components/Section";
+import BookCard from "../components/BookCard";
+import UpcomingBookCard from "../components/UpcomingBookCard";
+import VideoCarousel from "../components/VideoCarousel";
+import PressArticles from "../components/PressArticles";
+import { getUpcomingBooks } from "../data/books";
 
 const Home = () => {
   const { bio, books } = useSiteData();
   const upcomingBooks = getUpcomingBooks();
-  const publishedBook = books.find(book => book.id === 'lafzoon-kay-aansoo');
+  const publishedBook = books.find((book) => book.id === "lafzoon-kay-aansoo");
 
   return (
     <>
@@ -25,20 +27,16 @@ const Home = () => {
         ogImage="https://www.irfanmohiuddin.com/images/hero-author-portrait.jpg"
       />
       <SchemaAuthor />
-      
+
       <Hero />
 
       {/* About Preview Section */}
-      <Section
-        id="about-preview"
-        title="About the Author"
-        className="bg-white"
-      >
+      <Section id="about-preview" title="About the Author" className="bg-white">
         <div className="max-w-3xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
+            viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
             className="prose prose-lg mx-auto"
           >
@@ -86,6 +84,53 @@ const Home = () => {
           </div>
         </Section>
       )}
+      {/* Press & Media Coverage Section */}
+      <Section
+        id="press"
+        title="Press & Media Coverage"
+        subtitle="Featured articles and news coverage"
+        className="bg-white"
+      >
+        <PressArticles />
+      </Section>
+
+      {/* Videos Section */}
+      <Section
+        id="videos"
+        title="Videos"
+        subtitle="Watch our latest content"
+        className="bg-gray-50"
+      >
+        <VideoCarousel
+          videos={[
+            // Add your Cloudinary video URLs here
+            // You can pass videos as simple strings (URLs) or as objects with more details
+            //
+            // Option 1: Simple URL strings (thumbnails will be auto-generated)
+            "https://res.cloudinary.com/dw1sh368y/video/upload/v1762747595/VID-20251108-WA0002_zyykjm.mp4",
+            "https://res.cloudinary.com/dw1sh368y/video/upload/v1762747524/VID-20251108-WA0001_stpy5g.mp4",
+            "https://res.cloudinary.com/dw1sh368y/video/upload/v1762747818/VID-20251108-WA0003_wqadxc.mp4",
+            "https://res.cloudinary.com/dw1sh368y/video/upload/v1762748225/VID-20251108-WA0004_vl5eq7.mp4",
+
+            //
+            // Option 2: Full object with custom thumbnail and title
+            // {
+            //   id: 1,
+            //   url: 'https://res.cloudinary.com/your-cloud-name/video/upload/v1234567890/video1.mp4',
+            //   thumbnail: 'https://res.cloudinary.com/your-cloud-name/video/upload/so_0,w_800,f_jpg/v1234567890/video1.jpg',
+            //   title: 'Video Title 1'
+            // },
+            // {
+            //   id: 2,
+            //   url: 'https://res.cloudinary.com/your-cloud-name/video/upload/v1234567890/video2.mp4',
+            //   thumbnail: 'https://res.cloudinary.com/your-cloud-name/video/upload/so_0,w_800,f_jpg/v1234567890/video2.jpg',
+            //   title: 'Video Title 2'
+            // },
+          ]}
+          autoPlay={true}
+          interval={8000}
+        />
+      </Section>
 
       {/* Call to Action Section */}
       <Section
@@ -95,7 +140,7 @@ const Home = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
+          viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto"
         >
@@ -103,7 +148,8 @@ const Home = () => {
             Get in Touch
           </h2>
           <p className="text-lg text-gray-300 mb-8">
-            For inquiries, speaking engagements, or collaborations, feel free to reach out.
+            For inquiries, speaking engagements, or collaborations, feel free to
+            reach out.
           </p>
           <Link
             to="/contact"
@@ -118,4 +164,3 @@ const Home = () => {
 };
 
 export default Home;
-

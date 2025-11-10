@@ -23,8 +23,8 @@ const Footer = () => {
     { name: 'Facebook', icon: FaFacebook, url: bio.socialMedia?.facebook, color: 'hover:text-blue-600' },
     { name: 'Twitter', icon: FaTwitter, url: bio.socialMedia?.twitter, color: 'hover:text-sky-500' },
     { name: 'Instagram', icon: FaInstagram, url: bio.socialMedia?.instagram, color: 'hover:text-pink-600' },
-    { name: 'LinkedIn', icon: FaLinkedin, url: bio.socialMedia?.linkedin, color: 'hover:text-blue-700' },
-    { name: 'YouTube', icon: FaYoutube, url: bio.socialMedia?.youtube, color: 'hover:text-red-600' },
+    // { name: 'LinkedIn', icon: FaLinkedin, url: bio.socialMedia?.linkedin, color: 'hover:text-blue-700' },
+    // { name: 'YouTube', icon: FaYoutube, url: bio.socialMedia?.youtube, color: 'hover:text-red-600' },
   ];
 
   const quickLinks = [
