@@ -134,29 +134,64 @@ const Home = () => {
 
       {/* Call to Action Section */}
       <Section
-        className="bg-gray-500 text-white"
-        containerClass="container mx-auto px-4 py-20"
+        className="relative overflow-hidden"
+        containerClass="container mx-auto px-4 py-24"
       >
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(17,24,39,0.12),transparent_70%)]" />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto"
+          className="relative mx-auto max-w-4xl rounded-3xl border border-gray-200 bg-white/70 p-12 text-center shadow-xl backdrop-blur"
         >
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
+          <span className="mb-6 inline-flex items-center gap-3 rounded-full border border-gray-200 bg-white px-6 py-2 text-sm font-medium uppercase tracking-[0.2em] text-gray-500 shadow-sm">
+            Let’s collaborate
+          </span>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900">
             Get in Touch
           </h2>
-          <p className="text-lg text-gray-300 mb-8">
-            For inquiries, speaking engagements, or collaborations, feel free to
-            reach out.
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
+            For inquiries, speaking engagements, or collaborations, feel free to reach out and share your vision. We’ll respond as soon as possible.
           </p>
-          <Link
-            to="/contact"
-            className="inline-block px-8 py-3 bg-white text-gray-900 font-medium rounded-sm hover:bg-gray-100 transition-colors"
-          >
-            Contact Me
-          </Link>
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center gap-3 rounded-full bg-gray-900 px-8 py-3 text-white transition-all hover:-translate-y-0.5 hover:bg-gray-800 hover:shadow-lg"
+            >
+              Contact Me
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14" />
+                <path d="m13 6 6 6-6 6" />
+              </svg>
+            </Link>
+            <Link
+              to="/books"
+              className="inline-flex items-center justify-center gap-3 rounded-full border border-gray-300 px-8 py-3 text-gray-700 transition-all hover:-translate-y-0.5 hover:border-gray-400 hover:text-gray-900"
+            >
+              Explore Books
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1.5"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14" />
+                <path d="m13 6 6 6-6 6" />
+              </svg>
+            </Link>
+          </div>
         </motion.div>
       </Section>
     </>
