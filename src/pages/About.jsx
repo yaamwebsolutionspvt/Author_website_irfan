@@ -59,7 +59,7 @@ const About = () => {
               >
                 <div className="rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="/images/about-author-library.jpg"
+                    src="https://res.cloudinary.com/dw1sh368y/image/upload/v1762746305/about-author-library_lz3f0n.webp"
                     alt="Irfan Mohi-ud-din in his study, surrounded by books - author, imam, and teacher"
                     className="w-full h-auto object-cover"
                     loading="lazy"

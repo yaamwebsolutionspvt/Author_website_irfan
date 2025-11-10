@@ -78,7 +78,7 @@ const Contact = () => {
             >
               <div className="rounded-lg overflow-hidden shadow-xl">
                 <img
-                  src="/images/contact-author-cafe.jpg"
+                  src="https://res.cloudinary.com/dw1sh368y/image/upload/v1762746309/contact-author-cafe_ikjzqb.webp"
                   alt="Irfan Mohi-ud-din - author, teacher, and motivational speaker available for contact"
                   className="w-full h-auto object-cover"
                   loading="lazy"

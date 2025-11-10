@@ -48,7 +48,7 @@ const Hero = () => {
           >
             <div className="rounded-lg overflow-hidden shadow-2xl max-w-lg mx-auto lg:max-w-none">
               <img
-                src="/images/hero-author-portrait.jpg"
+                src="https://res.cloudinary.com/dw1sh368y/image/upload/v1762746310/hero-author-portrait_gtdi2i.webp"
                 alt="Irfan Mohi-ud-din, Kashmiri author, imam, khateeb, teacher, and motivational speaker"
                 className="w-full h-auto object-cover max-h-[60vh] lg:max-h-[70vh]"
                 loading="eager"

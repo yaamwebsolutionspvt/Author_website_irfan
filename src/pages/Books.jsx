@@ -27,7 +27,7 @@ const Books = () => {
       {/* Hero Section */}
       <Section
         className="bg-linear-to-b from-gray-50 to-white"
-        containerClass="container mx-auto px-4 py-20"
+        containerClass="container mx-auto px-4 py-4"
       >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
