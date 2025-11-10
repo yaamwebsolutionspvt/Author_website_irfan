@@ -82,12 +82,14 @@ const BookDetail = () => {
             transition={{ duration: 0.6 }}
             className="prose prose-lg max-w-none"
           >
-            {/* Book Image Placeholder */}
+            {/* Book Cover */}
             <div className="mb-8 text-center">
-              <div className="inline-block w-full max-w-md h-96 bg-gray-200 rounded-lg">
-                <div className="w-full h-full flex items-center justify-center">
-                  <span className="text-gray-400 text-lg">Book Cover Image</span>
-                </div>
+              <div className="inline-flex w-full max-w-md items-center justify-center overflow-hidden rounded-lg border border-gray-200 shadow-sm bg-white">
+                <img
+                  src={book.image || '/images/bookcover1.png'}
+                  alt={`${book.title} cover`}
+                  className="max-h-[32rem] w-full object-contain"
+                />
               </div>
             </div>
 

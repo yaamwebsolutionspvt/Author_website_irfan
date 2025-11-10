@@ -11,6 +11,16 @@ const BookCard = ({ book, index = 0 }) => {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200"
     >
+      <div className="w-full bg-white border-b border-gray-200">
+        <div className="w-full h-64 bg-gray-50 overflow-hidden">
+          <img
+            src={book.image || '/images/bookcover1.png'}
+            alt={`${book.title} cover`}
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+      </div>
       <div className="p-6">
         <div className="mb-4">
           <h3 className="text-xl font-serif font-bold text-gray-900 mb-2">

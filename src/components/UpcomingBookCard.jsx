@@ -19,9 +19,19 @@ const UpcomingBookCard = ({ book, index = 0 }) => {
             <p className="text-sm text-gray-600 italic mb-2">{book.subtitle}</p>
           )}
         </div>
-        <span className="ml-4 px-3 py-1 bg-gray-200 text-gray-700 text-xs font-semibold rounded-full">
-          Coming Soon
-        </span>
+        <div className="ml-4 flex items-center gap-3">
+          <div className="w-12 h-16 bg-white border border-gray-200 rounded shadow-sm overflow-hidden flex items-center justify-center">
+            <img
+              src={book.image || '/images/bookcover1.png'}
+              alt={`${book.title} cover`}
+              className="max-w-full max-h-full object-contain"
+              loading="lazy"
+            />
+          </div>
+          <span className="px-3 py-1 bg-gray-200 text-gray-700 text-xs font-semibold rounded-full">
+            Coming Soon
+          </span>
+        </div>
       </div>
       
       <p className="text-gray-700 mb-4 leading-relaxed">
