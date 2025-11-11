@@ -8,21 +8,21 @@ Please place the following images in this directory:
 
 ### 1. `hero-author-portrait.jpg`
 - **Location**: Hero section on homepage
-- **Description**: Outdoor portrait of Irfan Mohi-ud-din in a garden setting, leaning against a stone wall with books and laptop nearby
+- **Description**: Outdoor portrait of Irfan Mohiuddin in a garden setting, leaning against a stone wall with books and laptop nearby
 - **Usage**: Main hero image, also used as default Open Graph image for social media sharing
 - **Recommended Size**: 1200x800px or larger (aspect ratio 3:2)
 - **Format**: JPEG, optimized for web
 
 ### 2. `about-author-library.jpg`
 - **Location**: About page, above the biography section
-- **Description**: Portrait of Irfan Mohi-ud-din seated at a desk in a library/study with bookshelves in the background
+- **Description**: Portrait of Irfan Mohiuddin seated at a desk in a library/study with bookshelves in the background
 - **Usage**: Featured image on the About page
 - **Recommended Size**: 1200x800px or larger (aspect ratio 3:2)
 - **Format**: JPEG, optimized for web
 
 ### 3. `contact-author-cafe.jpg`
 - **Location**: Contact page hero section
-- **Description**: Portrait of Irfan Mohi-ud-din standing by a window in a cafe/bookstore, holding a cup, with bookshelves in the background
+- **Description**: Portrait of Irfan Mohiuddin standing by a window in a cafe/bookstore, holding a cup, with bookshelves in the background
 - **Usage**: Featured image on the Contact page
 - **Recommended Size**: 1000x800px or larger (aspect ratio 5:4)
 - **Format**: JPEG, optimized for web

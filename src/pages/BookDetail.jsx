@@ -16,7 +16,7 @@ const BookDetail = () => {
     return <Navigate to="/books" replace />;
   }
 
-  const pageTitle = `${book.title}${book.subtitle ? ` — ${book.subtitle}` : ''} by Irfan Mohi-ud-din`;
+  const pageTitle = `${book.title}${book.subtitle ? ` — ${book.subtitle}` : ''} by Irfan Mohiuddin`;
   const pageDescription = book.fullDescription || book.description;
 
   return (
@@ -24,7 +24,7 @@ const BookDetail = () => {
       <SEO
         title={pageTitle}
         description={pageDescription}
-        keywords={`${book.title}, Irfan Mohi-ud-din, ${book.subtitle || ''}, Kashmiri literature, ${book.isPublished ? 'published book' : 'upcoming book'}`}
+        keywords={`${book.title}, Irfan Mohiuddin, ${book.subtitle || ''}, Kashmiri literature, ${book.isPublished ? 'published book' : 'upcoming book'}`}
         canonical={`https://www.irfanmohiuddin.com/books/${id}`}
         ogTitle={pageTitle}
         ogDescription={pageDescription}
@@ -86,7 +86,7 @@ const BookDetail = () => {
             <div className="mb-8 text-center">
               <div className="inline-flex w-full max-w-md items-center justify-center overflow-hidden rounded-lg border border-gray-200 shadow-sm bg-white">
                 <img
-                  src={book.image || '/images/bookcover1.png'}
+                  src={book.image || '/images/https://res.cloudinary.com/dw1sh368y/image/upload/v1762829904/lafzonkyansoobook_dqwb92.webp.png'}
                   alt={`${book.title} cover`}
                   className="max-h-[32rem] w-full object-contain"
                 />
@@ -154,7 +154,7 @@ const BookDetail = () => {
               Explore More Books
             </h2>
             <p className="text-gray-600 mb-6">
-              Discover other literary works by Irfan Mohi-ud-din
+              Discover other literary works by Irfan Mohiuddin
             </p>
             <Link
               to="/books"

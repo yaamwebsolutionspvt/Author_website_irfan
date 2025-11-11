@@ -22,7 +22,7 @@ const UpcomingBookCard = ({ book, index = 0 }) => {
         <div className="ml-4 flex items-center gap-3">
           <div className="w-12 h-16 bg-white border border-gray-200 rounded shadow-sm overflow-hidden flex items-center justify-center">
             <img
-              src={book.image || '/images/bookcover1.png'}
+              src={book.image || '/images/https://res.cloudinary.com/dw1sh368y/image/upload/v1762829904/lafzonkyansoobook_dqwb92.webp.png'}
               alt={`${book.title} cover`}
               className="max-w-full max-h-full object-contain"
               loading="lazy"

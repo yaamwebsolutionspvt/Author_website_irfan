@@ -5,6 +5,10 @@ import SchemaAuthor from '../seo/SchemaAuthor';
 import { useSiteData } from '../context/SiteDataContext';
 import Section from '../components/Section';
 
+// Formspree endpoint - Replace with your Formspree form ID
+// Get your form ID from https://formspree.io/forms
+const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT || 'https://formspree.io/f/mdkyogzo';
+
 const Contact = () => {
   const { bio } = useSiteData();
   const [formData, setFormData] = useState({
@@ -15,36 +19,62 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
+    // Clear error message when user starts typing
+    if (errorMessage) {
+      setErrorMessage('');
+      setSubmitStatus(null);
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
+    setErrorMessage('');
 
-    // Simulate form submission (replace with actual API call)
-    setTimeout(() => {
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        
+        // Reset status message after 5 seconds
+        setTimeout(() => setSubmitStatus(null), 5000);
+      } else {
+        const errorData = await response.json();
+        setSubmitStatus('error');
+        setErrorMessage(errorData.error || 'Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      setErrorMessage('Network error. Please check your connection and try again.');
+      console.error('Form submission error:', error);
+    } finally {
       setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      
-      // Reset status message after 5 seconds
-      setTimeout(() => setSubmitStatus(null), 5000);
-    }, 1000);
+    }
   };
 
   return (
     <>
       <SEO
-        title="Contact Irfan Mohi-ud-din"
+        title="Contact Irfan Mohiuddin"
         description={`Get in touch with ${bio.name} for inquiries, speaking engagements, collaborations, or book-related questions.`}
-        keywords="Contact Irfan Mohi-ud-din, author contact, speaking engagements, book inquiries, Kashmir author contact"
+        keywords="Contact Irfan Mohiuddin, author contact, speaking engagements, book inquiries, Kashmir author contact"
         canonical="https://www.irfanmohiuddin.com/contact"
         ogImage="https://www.irfanmohiuddin.com/images/contact-author-cafe.jpg"
       />
@@ -79,7 +109,7 @@ const Contact = () => {
               <div className="rounded-lg overflow-hidden shadow-xl">
                 <img
                   src="https://res.cloudinary.com/dw1sh368y/image/upload/v1762746309/contact-author-cafe_ikjzqb.webp"
-                  alt="Irfan Mohi-ud-din - author, teacher, and motivational speaker available for contact"
+                  alt="Irfan Mohiuddin - author, teacher, and motivational speaker available for contact"
                   className="w-full h-auto object-cover"
                   loading="lazy"
                 />
@@ -249,6 +279,12 @@ const Contact = () => {
                   </div>
                 )}
 
+                {submitStatus === 'error' && (
+                  <div className="p-4 bg-red-50 border border-red-200 rounded-sm text-red-800">
+                    {errorMessage || 'Failed to send message. Please try again.'}
+                  </div>
+                )}
+
                 <button
                   type="submit"
                   disabled={isSubmitting}
@@ -276,7 +312,7 @@ const Contact = () => {
             className="text-center"
           >
             <p className="text-gray-700 leading-relaxed mb-6">
-              Irfan Mohi-ud-din is available for speaking engagements, educational sessions, 
+              Irfan Mohiuddin is available for speaking engagements, educational sessions, 
               and community events. Whether you're interested in his literary works, 
               seeking guidance, or looking for a motivational speaker, feel free to reach out.
             </p>

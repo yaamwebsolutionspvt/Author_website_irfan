@@ -50,7 +50,7 @@ const Header = () => {
               whileTap={{ scale: 0.95 }}
               className="text-xl md:text-2xl lg:text-3xl font-serif font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent group-hover:from-gray-700 group-hover:to-gray-900 transition-all duration-300"
             >
-              Irfan Mohi-ud-din
+              Irfan Mohiuddin
             </motion.div>
           </Link>
 

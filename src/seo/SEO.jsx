@@ -18,9 +18,9 @@ const SEO = ({
   const location = useLocation();
   const baseUrl = 'https://www.irfanmohiuddin.com'; // Update with actual domain
   const currentUrl = canonical || `${baseUrl}${location.pathname}`;
-  const finalTitle = title ? `${title} | Irfan Mohi-ud-din` : 'Irfan Mohi-ud-din — Young Kashmiri Author, Imam, Khateeb, Teacher & Motivational Speaker.';
-  const finalDescription = description || 'Irfan Mohi-ud-din is a Kashmiri author, imam, khateeb, teacher, and motivational speaker. Words that awaken hearts and guide the soul.';
-  const finalKeywords = keywords || 'Irfan Mohi-ud-din, Kashmiri author, Imam, Khateeb, Teacher, Motivational Speaker, Lafzoon Kay Aansoo, Kashmiri literature, Islamic scholar, Shopian';
+  const finalTitle = title ? `${title} | Irfan Mohiuddin` : 'Irfan Mohiuddin — Young Kashmiri Author, Imam, Khateeb, Teacher & Motivational Speaker.';
+  const finalDescription = description || 'Irfan Mohiuddin is a Kashmiri author, imam, khateeb, teacher, and motivational speaker. Words that awaken hearts and guide the soul.';
+  const finalKeywords = keywords || 'Irfan Mohiuddin, Kashmiri author, Imam, Khateeb, Teacher, Motivational Speaker, Lafzoon Kay Aansoo, Kashmiri literature, Islamic scholar, Shopian';
   const finalOgTitle = ogTitle || finalTitle;
   const finalOgDescription = ogDescription || finalDescription;
   const finalOgImage = ogImage || `${baseUrl}/images/hero-author-portrait.jpg`;
@@ -65,7 +65,7 @@ const SEO = ({
     updateMetaTag('og:url', currentUrl, true);
     updateMetaTag('og:type', ogType, true);
     updateMetaTag('og:image', finalOgImage, true);
-    updateMetaTag('og:site_name', 'Irfan Mohi-ud-din', true);
+    updateMetaTag('og:site_name', 'Irfan Mohiuddin', true);
 
     // Twitter Card tags
     updateMetaTag('twitter:card', twitterCard);

@@ -12,9 +12,9 @@ const About = () => {
   return (
     <>
       <SEO
-        title="About Irfan Mohi-ud-din"
+        title="About Irfan Mohiuddin"
         description={`Learn about ${bio.name}, a Kashmiri author, imam, khateeb, teacher, and motivational speaker from Shopian. Discover his journey, education, and literary works.`}
-        keywords="Irfan Mohi-ud-din biography, Kashmiri author, Imam Shopian, Khateeb, Islamic scholar, Bahaadati Ustaad, Maulvi Fazil, Islamic Studies, motivational speaker Kashmir"
+        keywords="Irfan Mohiuddin biography, Kashmiri author, Imam Shopian, Khateeb, Islamic scholar, Bahaadati Ustaad, Maulvi Fazil, Islamic Studies, motivational speaker Kashmir"
         canonical="https://www.irfanmohiuddin.com/about"
         ogImage="https://www.irfanmohiuddin.com/images/about-author-library.jpg"
       />
@@ -30,7 +30,7 @@ const About = () => {
               transition={{ duration: 0.6 }}
               className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-gray-900 mb-4"
             >
-              About Irfan Mohi-ud-din
+              About Irfan Mohiuddin
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
@@ -60,7 +60,7 @@ const About = () => {
                 <div className="rounded-2xl overflow-hidden shadow-2xl">
                   <img
                     src="https://res.cloudinary.com/dw1sh368y/image/upload/v1762746305/about-author-library_lz3f0n.webp"
-                    alt="Irfan Mohi-ud-din in his study, surrounded by books - author, imam, and teacher"
+                    alt="Irfan Mohiuddin in his study, surrounded by books - author, imam, and teacher"
                     className="w-full h-auto object-cover"
                     loading="lazy"
                   />
@@ -253,7 +253,7 @@ const About = () => {
                 "Apart from writing, he is also a motivational speaker and community leader, addressing social issues such as depression, addiction, and moral decline among youth, guiding them back to righteousness through education and faith."
               </blockquote>
               <p className="text-gray-600 text-base md:text-lg leading-relaxed">
-                Through his words, teachings, and guidance, Irfan Mohi-ud-din continues to inspire and uplift communities, making a lasting impact on hearts and souls.
+                Through his words, teachings, and guidance, Irfan Mohiuddin continues to inspire and uplift communities, making a lasting impact on hearts and souls.
               </p>
             </div>
           </motion.div>

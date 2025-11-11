@@ -22,7 +22,7 @@ const Home = () => {
       <SEO
         title={bio.tagline}
         description={bio.shortBio}
-        keywords="Irfan Mohi-ud-din, Kashmiri author, Imam, Khateeb, Teacher, Motivational Speaker, Lafzoon Kay Aansoo, Kashmiri literature, Islamic scholar, Shopian, young author"
+        keywords="Irfan Mohiuddin, Kashmiri author, Imam, Khateeb, Teacher, Motivational Speaker, Lafzoon Kay Aansoo, Kashmiri literature, Islamic scholar, Shopian, young author"
         canonical="https://www.irfanmohiuddin.com/"
         ogImage="https://www.irfanmohiuddin.com/images/hero-author-portrait.jpg"
       />
@@ -63,7 +63,7 @@ const Home = () => {
           subtitle="Explore the latest literary work"
           className="bg-gray-50"
         >
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <BookCard book={publishedBook} index={0} />
           </div>
         </Section>

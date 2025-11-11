@@ -17,9 +17,9 @@ const Books = () => {
   return (
     <>
       <SEO
-        title="Books by Irfan Mohi-ud-din"
+        title="Books by Irfan Mohiuddin"
         description={`Explore the literary works of ${bio.name}, including Lafzoon Kay Aansoo and upcoming books: Safar-e-Dil, Ek Kadmon Ka Safar, and Dilon Ki Sada.`}
-        keywords="Irfan Mohi-ud-din books, Lafzoon Kay Aansoo, Safar-e-Dil, Ek Kadmon Ka Safar, Dilon Ki Sada, Kashmiri literature, Islamic books, spiritual books"
+        keywords="Irfan Mohiuddin books, Lafzoon Kay Aansoo, Safar-e-Dil, Ek Kadmon Ka Safar, Dilon Ki Sada, Kashmiri literature, Islamic books, spiritual books"
         canonical="https://www.irfanmohiuddin.com/books"
       />
       <SchemaAuthor />
@@ -51,7 +51,7 @@ const Books = () => {
           title="Published Book"
           subtitle="Currently Available"
         >
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <BookCard book={publishedBook} index={0} />
           </div>
         </Section>
