@@ -7,8 +7,11 @@ const Section = ({
   id,
   title,
   subtitle,
+  titleTag = 'h2',
   containerClass = 'container mx-auto px-4 py-16'
 }) => {
+  const TitleTag = titleTag;
+  
   return (
     <section id={id} className={`${className}`}>
       <div className={containerClass}>
@@ -21,9 +24,9 @@ const Section = ({
             className="text-center mb-12"
           >
             {title && (
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">
+              <TitleTag className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">
                 {title}
-              </h2>
+              </TitleTag>
             )}
             {subtitle && (
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">

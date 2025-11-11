@@ -403,8 +403,9 @@ const VideoCarousel = ({ videos = [], autoPlay = true, interval = 5000 }) => {
               {video.thumbnail && !thumbnailErrors[video.id] ? (
                 <img
                   src={video.thumbnail}
-                  alt={video.title || `Video ${index + 1}`}
+                  alt={video.title || `Video ${index + 1} by Irfan Mohiuddin`}
                   className="w-24 h-16 object-cover"
+                  loading="lazy"
                   onError={() => {
                     setThumbnailErrors((prev) => ({ ...prev, [video.id]: true }));
                   }}

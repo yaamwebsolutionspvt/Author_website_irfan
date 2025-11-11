@@ -3,6 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import SEO from '../seo/SEO';
 import SchemaAuthor from '../seo/SchemaAuthor';
+import SchemaBook from '../seo/SchemaBook';
 import { useSiteData } from '../context/SiteDataContext';
 import Section from '../components/Section';
 import { getBookById } from '../data/books';
@@ -28,8 +29,10 @@ const BookDetail = () => {
         canonical={`https://www.irfanmohiuddin.com/books/${id}`}
         ogTitle={pageTitle}
         ogDescription={pageDescription}
+        ogImage={book.image || 'https://www.irfanmohiuddin.com/images/hero-author-portrait.jpg'}
       />
       <SchemaAuthor />
+      <SchemaBook book={book} />
 
       {/* Hero Section */}
       <Section
@@ -87,8 +90,9 @@ const BookDetail = () => {
               <div className="inline-flex w-full max-w-md items-center justify-center overflow-hidden rounded-lg border border-gray-200 shadow-sm bg-white">
                 <img
                   src={book.image || '/images/https://res.cloudinary.com/dw1sh368y/image/upload/v1762829904/lafzonkyansoobook_dqwb92.webp.png'}
-                  alt={`${book.title} cover`}
+                  alt={`${book.title}${book.subtitle ? ` - ${book.subtitle}` : ''} book cover by Irfan Mohiuddin`}
                   className="max-h-[32rem] w-full object-contain"
+                  loading="lazy"
                 />
               </div>
             </div>

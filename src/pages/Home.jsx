@@ -31,7 +31,7 @@ const Home = () => {
       <Hero />
 
       {/* About Preview Section */}
-      <Section id="about-preview" title="About the Author" className="bg-white">
+      <Section id="about-preview" title="About the Author" titleTag="h2" className="bg-white">
         <div className="max-w-3xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -60,6 +60,7 @@ const Home = () => {
         <Section
           id="books"
           title="Published Book"
+          titleTag="h2"
           subtitle="Explore the latest literary work"
           className="bg-gray-50"
         >
@@ -74,6 +75,7 @@ const Home = () => {
         <Section
           id="upcoming-books"
           title="Upcoming Books"
+          titleTag="h2"
           subtitle="Future works in progress"
           className="bg-white"
         >
@@ -88,6 +90,7 @@ const Home = () => {
       <Section
         id="press"
         title="Press & Media Coverage"
+        titleTag="h2"
         subtitle="Featured articles and news coverage"
         className="bg-white"
       >
@@ -98,6 +101,7 @@ const Home = () => {
       <Section
         id="videos"
         title="Videos"
+        titleTag="h2"
         subtitle="Watch our latest content"
         className="bg-gray-50"
       >

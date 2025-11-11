@@ -302,6 +302,7 @@ const Contact = () => {
       <Section
         className="bg-gray-50"
         title="Other Ways to Connect"
+        titleTag="h2"
       >
         <div className="max-w-3xl mx-auto">
           <motion.div

@@ -8,8 +8,9 @@ const NotFound = () => {
     <>
       <SEO
         title="404 - Page Not Found"
-        description="The page you are looking for could not be found."
+        description="The page you are looking for could not be found. Return to the homepage to explore Irfan Mohiuddin's books, biography, and contact information."
         canonical="https://www.irfanmohiuddin.com/404"
+        ogImage="https://www.irfanmohiuddin.com/images/hero-author-portrait.jpg"
       />
 
       <div className="min-h-[70vh] flex items-center justify-center bg-gradient-to-b from-gray-50 to-white py-20 px-4">
@@ -26,9 +27,9 @@ const NotFound = () => {
             transition={{ delay: 0.2, duration: 0.5, type: 'spring' }}
             className="mb-8"
           >
-            <h1 className="text-9xl md:text-[12rem] font-serif font-bold text-gray-900 leading-none">
+            <div className="text-9xl md:text-[12rem] font-serif font-bold text-gray-900 leading-none" aria-hidden="true">
               404
-            </h1>
+            </div>
           </motion.div>
 
           {/* Error Message */}
@@ -38,9 +39,9 @@ const NotFound = () => {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="mb-8"
           >
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">
+            <h1 className="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-4">
               Page Not Found
-            </h2>
+            </h1>
             <p className="text-lg md:text-xl text-gray-600 font-light max-w-md mx-auto">
               The page you are looking for seems to have wandered off into the pages of an unwritten book.
             </p>

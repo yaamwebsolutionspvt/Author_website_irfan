@@ -49,6 +49,7 @@ const Books = () => {
         <Section
           className="bg-white"
           title="Published Book"
+          titleTag="h2"
           subtitle="Currently Available"
         >
           <div className="max-w-5xl mx-auto">
@@ -62,6 +63,7 @@ const Books = () => {
         <Section
           className="bg-gray-50"
           title="Upcoming Books"
+          titleTag="h2"
           subtitle="Works in Progress"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -76,6 +78,7 @@ const Books = () => {
       <Section
         className="bg-white"
         title="About the Author"
+        titleTag="h2"
       >
         <div className="max-w-3xl mx-auto">
           <motion.div

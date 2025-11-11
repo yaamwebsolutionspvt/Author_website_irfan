@@ -91,6 +91,7 @@ const About = () => {
        <Section
         id="press"
         title="Press & Media Coverage"
+        titleTag="h2"
         subtitle="Featured articles and news coverage"
         className="bg-white"
       >

@@ -38,7 +38,13 @@ const SchemaAuthor = () => {
       email: bio.email,
       telephone: bio.phone,
       url: baseUrl,
-      sameAs: [], // Add social media links here when available
+      sameAs: [
+        bio.socialMedia?.facebook,
+        bio.socialMedia?.twitter,
+        bio.socialMedia?.instagram,
+        bio.socialMedia?.linkedin,
+        bio.socialMedia?.youtube
+      ].filter(Boolean), // Filter out undefined/null values
       knowsAbout: ['Islamic Studies', 'Kashmiri Literature', 'Religious Education', 'Motivational Speaking'],
       alumniOf: {
         '@type': 'EducationalOrganization',

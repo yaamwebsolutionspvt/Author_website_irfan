@@ -1,0 +1,21 @@
+# robots.txt for irfanmohiuddin.com
+
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /books
+Allow: /contact
+Allow: /books/*
+
+# Disallow admin/system pages (if any exist in the future)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /_redirects
+
+# Sitemap location
+Sitemap: https://www.irfanmohiuddin.com/sitemap.xml
+
+# Crawl-delay (optional, adjust as needed)
+Crawl-delay: 1
+

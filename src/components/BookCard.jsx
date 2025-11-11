@@ -20,7 +20,7 @@ const BookCard = ({ book, index = 0 }) => {
             <div className="w-full h-72 md:h-72 bg-gray-50 overflow-hidden">
               <img
                 src={book.image || '/images/https://res.cloudinary.com/dw1sh368y/image/upload/v1762829904/lafzonkyansoobook_dqwb92.webp.png'}
-                alt={`${book.title} cover`}
+                alt={`${book.title}${book.subtitle ? ` - ${book.subtitle}` : ''} book cover by Irfan Mohiuddin`}
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -62,7 +62,7 @@ const BookCard = ({ book, index = 0 }) => {
             <div className="w-full h-64 bg-gray-50 overflow-hidden">
               <img
                 src={book.image || '/images/https://res.cloudinary.com/dw1sh368y/image/upload/v1762829904/lafzonkyansoobook_dqwb92.webp.png'}
-                alt={`${book.title} cover`}
+                alt={`${book.title}${book.subtitle ? ` - ${book.subtitle}` : ''} book cover by Irfan Mohiuddin`}
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
