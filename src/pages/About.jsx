@@ -15,8 +15,8 @@ const About = () => {
         title="About Irfan Mohiuddin"
         description={`Learn about ${bio.name}, a Kashmiri author, imam, khateeb, teacher, and motivational speaker from Shopian. Discover his journey, education, and literary works.`}
         keywords="Irfan Mohiuddin biography, Kashmiri author, Imam Shopian, Khateeb, Islamic scholar, Bahaadati Ustaad, Maulvi Fazil, Islamic Studies, motivational speaker Kashmir"
-        canonical="https://www.irfanmohiuddin.com/about"
-        ogImage="https://www.irfanmohiuddin.com/images/about-author-library.jpg"
+        canonical="https://irfanmohiuddin.in/about"
+        ogImage="https://irfanmohiuddin.in/images/about-author-library.jpg"
       />
       <SchemaAuthor />
 

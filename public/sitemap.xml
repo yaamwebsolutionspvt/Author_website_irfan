@@ -6,7 +6,7 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://www.irfanmohiuddin.com/</loc>
+    <loc>https://irfanmohiuddin.in/</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
   
   <!-- About Page -->
   <url>
-    <loc>https://www.irfanmohiuddin.com/about</loc>
+    <loc>https://irfanmohiuddin.in/about</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -22,7 +22,7 @@
   
   <!-- Books Page -->
   <url>
-    <loc>https://www.irfanmohiuddin.com/books</loc>
+    <loc>https://irfanmohiuddin.in/books</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -30,28 +30,28 @@
   
   <!-- Book Detail Pages -->
   <url>
-    <loc>https://www.irfanmohiuddin.com/books/lafzoon-kay-aansoo</loc>
+    <loc>https://irfanmohiuddin.in/books/lafzoon-kay-aansoo</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://www.irfanmohiuddin.com/books/safar-e-dil</loc>
+    <loc>https://irfanmohiuddin.in/books/safar-e-dil</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://www.irfanmohiuddin.com/books/ek-kadmon-ka-safar</loc>
+    <loc>https://irfanmohiuddin.in/books/ek-kadmon-ka-safar</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>https://www.irfanmohiuddin.com/books/dilon-ki-sada</loc>
+    <loc>https://irfanmohiuddin.in/books/dilon-ki-sada</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -59,7 +59,7 @@
   
   <!-- Contact Page -->
   <url>
-    <loc>https://www.irfanmohiuddin.com/contact</loc>
+    <loc>https://irfanmohiuddin.in/contact</loc>
     <lastmod>2025-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

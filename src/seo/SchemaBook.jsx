@@ -3,7 +3,7 @@ import { useSiteData } from '../context/SiteDataContext';
 
 const SchemaBook = ({ book }) => {
   const { bio } = useSiteData();
-  const baseUrl = 'https://www.irfanmohiuddin.com';
+  const baseUrl = 'https://irfanmohiuddin.in';
 
   useEffect(() => {
     if (!book) return;

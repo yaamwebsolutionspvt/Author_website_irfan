@@ -20,7 +20,7 @@ export const SiteDataProvider = ({ children }) => {
     location: 'Nully Poshwari, Shopian (J&K), India',
     born: '1999',
     roles: ['Author', 'Imam', 'Khateeb', 'Teacher', 'Motivational Speaker'],
-    tagline: 'Irfan Mohiuddin — Young Kashmiri Author, Imam, Khateeb, Teacher & Motivational Speaker.',
+    tagline: 'Irfan Mohiuddin Young Kashmiri Author, Imam, Khateeb, Teacher & Motivational Speaker.',
     websiteHeading: 'Words that awaken hearts and guide the soul.',
     shortBio: 'Irfan Mohiuddin is a Kashmiri author, imam, khateeb, and teacher from Nully Poshwari, Shopian (born 1999). He completed his Maulvi Fazil in 2018 and earned his Post Graduation in Islamic Studies in 2020. Presently, he is working as a Bahaadati Ustaad (senior teacher), while continuing his literary and religious mission. His first book, Lafzon Ke Aansoo (2025), reflects his heartfelt emotions and spiritual journey. His upcoming works include Safar-e-Dil (An Eternal Story), Ek Kadmon Ka Safar, and Dilon Ki Sada — each capturing the essence of love, faith, and human struggle.',
     socialMedia: {

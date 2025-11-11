@@ -1,4 +1,4 @@
-# robots.txt for irfanmohiuddin.com
+# robots.txt for https://irfanmohiuddin.in
 
 User-agent: *
 Allow: /
@@ -14,7 +14,7 @@ Disallow: /*.json$
 Disallow: /_redirects
 
 # Sitemap location
-Sitemap: https://www.irfanmohiuddin.com/sitemap.xml
+Sitemap: https://irfanmohiuddin.in/sitemap.xml
 
 # Crawl-delay (optional, adjust as needed)
 Crawl-delay: 1

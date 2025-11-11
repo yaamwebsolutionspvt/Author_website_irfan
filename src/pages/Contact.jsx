@@ -75,8 +75,8 @@ const Contact = () => {
         title="Contact Irfan Mohiuddin"
         description={`Get in touch with ${bio.name} for inquiries, speaking engagements, collaborations, or book-related questions.`}
         keywords="Contact Irfan Mohiuddin, author contact, speaking engagements, book inquiries, Kashmir author contact"
-        canonical="https://www.irfanmohiuddin.com/contact"
-        ogImage="https://www.irfanmohiuddin.com/images/contact-author-cafe.jpg"
+        canonical="https://irfanmohiuddin.in/contact"
+        ogImage="https://irfanmohiuddin.in/images/contact-author-cafe.jpg"
       />
       <SchemaAuthor />
 

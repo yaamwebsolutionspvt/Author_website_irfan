@@ -4,7 +4,7 @@ import { books } from '../data/books';
 
 const SchemaAuthor = () => {
   const { bio } = useSiteData();
-  const baseUrl = 'https://www.irfanmohiuddin.com'; // Update with actual domain
+  const baseUrl = 'https://irfanmohiuddin.in'; // Update with actual domain
 
   useEffect(() => {
     // Published books

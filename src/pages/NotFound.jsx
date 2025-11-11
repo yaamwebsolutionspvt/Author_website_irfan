@@ -9,8 +9,8 @@ const NotFound = () => {
       <SEO
         title="404 - Page Not Found"
         description="The page you are looking for could not be found. Return to the homepage to explore Irfan Mohiuddin's books, biography, and contact information."
-        canonical="https://www.irfanmohiuddin.com/404"
-        ogImage="https://www.irfanmohiuddin.com/images/hero-author-portrait.jpg"
+        canonical="https://irfanmohiuddin.in/404"
+        ogImage="https://irfanmohiuddin.in/images/hero-author-portrait.jpg"
       />
 
       <div className="min-h-[70vh] flex items-center justify-center bg-gradient-to-b from-gray-50 to-white py-20 px-4">

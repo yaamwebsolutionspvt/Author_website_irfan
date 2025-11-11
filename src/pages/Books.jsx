@@ -20,7 +20,7 @@ const Books = () => {
         title="Books by Irfan Mohiuddin"
         description={`Explore the literary works of ${bio.name}, including Lafzoon Kay Aansoo and upcoming books: Safar-e-Dil, Ek Kadmon Ka Safar, and Dilon Ki Sada.`}
         keywords="Irfan Mohiuddin books, Lafzoon Kay Aansoo, Safar-e-Dil, Ek Kadmon Ka Safar, Dilon Ki Sada, Kashmiri literature, Islamic books, spiritual books"
-        canonical="https://www.irfanmohiuddin.com/books"
+        canonical="https://irfanmohiuddin.in/books"
       />
       <SchemaAuthor />
 

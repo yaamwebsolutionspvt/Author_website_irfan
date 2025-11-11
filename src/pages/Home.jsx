@@ -23,8 +23,8 @@ const Home = () => {
         title={bio.tagline}
         description={bio.shortBio}
         keywords="Irfan Mohiuddin, Kashmiri author, Imam, Khateeb, Teacher, Motivational Speaker, Lafzoon Kay Aansoo, Kashmiri literature, Islamic scholar, Shopian, young author"
-        canonical="https://www.irfanmohiuddin.com/"
-        ogImage="https://www.irfanmohiuddin.com/images/hero-author-portrait.jpg"
+        canonical="https://irfanmohiuddin.in/"
+        ogImage="https://.rfanmohiuddin.in/images/hero-author-portrait.jpg"
       />
       <SchemaAuthor />
 

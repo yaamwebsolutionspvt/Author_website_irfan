@@ -16,9 +16,9 @@ const SEO = ({
   twitterImage
 }) => {
   const location = useLocation();
-  const baseUrl = 'https://www.irfanmohiuddin.com'; // Update with actual domain
+  const baseUrl = 'https://irfanmohiuddin.in'; // Update with actual domain
   const currentUrl = canonical || `${baseUrl}${location.pathname}`;
-  const finalTitle = title ? `${title} | Irfan Mohiuddin` : 'Irfan Mohiuddin — Young Kashmiri Author, Imam, Khateeb, Teacher & Motivational Speaker.';
+  const finalTitle = title ? `${title} | Irfan Mohiuddin` : 'Irfan Mohiuddin Young Kashmiri Author, Imam, Khateeb, Teacher & Motivational Speaker.';
   const finalDescription = description || 'Irfan Mohiuddin is a Kashmiri author, imam, khateeb, teacher, and motivational speaker. Words that awaken hearts and guide the soul.';
   const finalKeywords = keywords || 'Irfan Mohiuddin, Kashmiri author, Imam, Khateeb, Teacher, Motivational Speaker, Lafzoon Kay Aansoo, Kashmiri literature, Islamic scholar, Shopian';
   const finalOgTitle = ogTitle || finalTitle;

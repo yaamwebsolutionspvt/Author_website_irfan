@@ -26,10 +26,10 @@ const BookDetail = () => {
         title={pageTitle}
         description={pageDescription}
         keywords={`${book.title}, Irfan Mohiuddin, ${book.subtitle || ''}, Kashmiri literature, ${book.isPublished ? 'published book' : 'upcoming book'}`}
-        canonical={`https://www.irfanmohiuddin.com/books/${id}`}
+        canonical={`https://irfanmohiuddin.in/books/${id}`}
         ogTitle={pageTitle}
         ogDescription={pageDescription}
-        ogImage={book.image || 'https://www.irfanmohiuddin.com/images/hero-author-portrait.jpg'}
+        ogImage={book.image || 'https://irfanmohiuddin.in/images/hero-author-portrait.jpg'}
       />
       <SchemaAuthor />
       <SchemaBook book={book} />
